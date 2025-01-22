@@ -1,0 +1,1542 @@
+
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>FT Soluciones - Mis acabados</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+          <meta charset="utf-8">
+          <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+          <title>FT Soluciones S.A.S - Index</title>
+          <meta content="" name="description">
+          <meta content="" name="keywords">
+
+          <!-- Favicons -->
+          <link href="assets/img/favicon.png" rel="icon">
+          <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+          <!-- Google Fonts -->
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+          <!-- Vendor CSS Files -->
+          <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+          <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+          <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+          <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+          <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+          <!-- Template Main CSS File -->
+          <link href="assets/css/style_plande.css" rel="stylesheet">
+        <style>
+            
+            /* Remove the navbar's default margin-bottom and rounded borders */ 
+            .navbar {
+                padding: 0.5rem;
+            }
+
+            /* Add a gray background color and some padding to the footer */
+            footer {
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+            .custom-background {
+                background-color: #5D99C1;
+                color: white;
+                font-size: 40px;
+            }
+
+            .card {
+                padding: 1;
+                margin: 10px;
+                width: 180px;
+            }
+
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            input[type="range"] {
+                width:80%;
+            }
+                        
+            .value {
+            font-size: 36px;    
+            width: 60px;
+            text-align: center;
+            }
+
+            .card-deck {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: stretch;
+                }
+
+            .card {
+                padding: 0.5rem; /* Adjust the padding as needed */
+                margin: 5px; /* Adjust the margin as needed */
+                width: 150px; /* Adjust the width as needed */
+            }
+
+            /* Hide the carousel text when the screen is less than 600 pixels wide */
+            @media (max-width: 600px) {
+                .carousel-caption {
+                display: none; 
+                }
+            }
+
+            /* The switch - the box around the slider */
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 50px;
+                height: 20px;
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+            /* The slider */
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 13px;
+                width: 13px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+            input:checked + .slider {
+             background-color: hsl(114, 21%, 46%);
+            }
+
+            input:focus + .slider {
+                box-shadow: 0 0 1px hsl(99, 28%, 30%);
+            }
+
+            input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+                border-radius: 34px;
+            }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+                }
+            }
+
+            body {
+                font-size: 18px; /* Adjust the value as needed */
+            }
+
+            .display-3 {font-size: 2rem;
+            }
+
+
+        </style>
+
+        <script>
+
+            let BUDGET = 0;
+            let LEVEL = 1
+            const price = [];
+            price.push(['TIT__OBRA_BLANCA_Y_TIPO_DE_PISO','',''])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TechoEnAcabadoLiso',1693877.551,''])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento','',''])
+            price.push(['OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnDrywall',3818588,3818588])
+            price.push(['OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPvc',4080272,4080272])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__EstucoEnMuros',2957823,3268027])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__Pintura',2424490,2524490])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CerraduraDeSeguridadIncluidoOjoBionico',150000,150000])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__RefuerzoParaLaPuertaPrincipal',980000,980000])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__KitDeIluminacion',225918,263943])
+            price.push(['SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo','',''])
+            price.push(['OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnCeramica',10307483,10307483])
+            price.push(['OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPorcelanato',12878912,12878912])
+
+            price.push(['TIT__ALCOBA_PRINCIPAL','',''])
+            price.push(['SW__ALCOBA_PRINCIPAL__PuertaEnMaderaIncluidaCerradura',680272,680272])
+            price.push(['SW__ALCOBA_PRINCIPAL__ClosetEnRh_Mdf',3847619,3847619])
+
+            price.push(['TIT__BAÑO','',''])
+            price.push(['SW__BAÑO__ConstruirMuroDivisorio',625850,702000])
+            price.push(['SW__BAÑO__EnchapeDePisoYMuros','',''])
+            price.push(['OPT__BAÑO__AlturaCompleta',2197279,2197279])
+            price.push(['OPT__BAÑO__AlturaMedia',2112925,2112925])
+            price.push(['SW__BAÑO__PuertaEntamboradaEnRh_Mdf',680272,680272])
+            price.push(['SW__BAÑO__Sanitario','',''])
+            price.push(['OPT__BAÑO__Ahorrador',510204,510204])
+            price.push(['OPT__BAÑO__AhorradorDobleDescarga',571429,571429])
+            price.push(['SW__BAÑO__MuebleDeBañoEnMdfConMeson','',''])
+            price.push(['OPT__BAÑO__EnGranito',521769,521769])
+            price.push(['OPT__BAÑO__EnMadera',421769,421769])
+            price.push(['SW__BAÑO__LavamanosTipoTason','',''])
+            price.push(['OPT__BAÑO__DeSobreponer',435374,435374])
+            price.push(['OPT__BAÑO__DeIncrustar',380952,380952])
+            price.push(['SW__BAÑO__IncrustacionesYGriferia','',''])
+            price.push(['OPT__BAÑO__MonoControl',544218,544218])
+            price.push(['OPT__BAÑO__MonoControlMejorado',1106122,1106122])
+            price.push(['SW__BAÑO__DivisionDeBañoEnVidrioTemplado',1360544,1360544])
+
+            price.push(['TIT__ALCOBA_2','',''])
+            price.push(['SW__ALCOBA_2__PuertaEnMaderaIncluidaCerradura',680272,680272])
+            price.push(['SW__ALCOBA_2__ClosetEnRh_Mdf',2693878,2693878])
+
+            price.push(['TIT__BAÑO_SOCIAL','',''])
+            price.push(['SW__BAÑO_SOCIAL__DemolerEnchapeExistente',115646,115646])
+            price.push(['SW__BAÑO_SOCIAL__EnchapeDePisoYMuros','',''])
+            price.push(['OPT__BAÑO_SOCIAL__AlturaCompleta',2197279,2197279])
+            price.push(['OPT__BAÑO_SOCIAL__AlturaMedia',2112925,2112925])
+            price.push(['SW__BAÑO_SOCIAL__PuertaEntamboradaEnRh_Mdf',680272,680272])
+            price.push(['SW__BAÑO_SOCIAL__Sanitario','',''])
+            price.push(['OPT__BAÑO_SOCIAL__Ahorrador',510204,510204])
+            price.push(['OPT__BAÑO_SOCIAL__AhorradorDobleDescarga',571429,571429])
+            price.push(['SW__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson','',''])
+            price.push(['OPT__BAÑO_SOCIAL__EnGranito',521769,521769])
+            price.push(['OPT__BAÑO_SOCIAL__EnMadera',421769,421769])
+            price.push(['SW__BAÑO_SOCIAL__LavamanosTipoTason','',''])
+            price.push(['OPT__BAÑO_SOCIAL__DeSobreponer',435374,435374])
+            price.push(['OPT__BAÑO_SOCIAL__DeIncrustar',380952,380952])
+            price.push(['SW__BAÑO_SOCIAL__IncrustacionesYGriferia','',''])
+            price.push(['OPT__BAÑO_SOCIAL__MonoControl',544218,544218])
+            price.push(['OPT__BAÑO_SOCIAL__MonoControlMejorado',1106122,1106122])
+            price.push(['SW__BAÑO_SOCIAL__DivisionDeBañoEnVidrioTemplado',925170,925170])
+
+            price.push(['TIT__COCINA','',''])
+            price.push(['SW__COCINA__MuebleSuperior',1972789,1972789])
+            price.push(['SW__COCINA__MuebleInferior',1972789,1972789])
+            price.push(['SW__COCINA__MesonTipoBarra','',''])
+            price.push(['OPT__COCINA__EnGranito',1265306,1265306])
+            price.push(['OPT__COCINA__EnMaderaRh_Mdf',503401,503401])
+            price.push(['SW__COCINA__MesonDeCocina','',''])
+            price.push(['OPT__COCINA__EnGranitoColorClaro',1691000,1691000])
+            price.push(['OPT__COCINA__EnGranitoColorOscuro',1691000,1691000])
+            price.push(['SW__COCINA__Estufa4Puestos','',''])
+            price.push(['OPT__COCINA__EnAluminio',598639,598639])
+            price.push(['OPT__COCINA__EnVidrio',1156463,1156463])
+            price.push(['SW__COCINA__CampanaHorizontal',394558,394558])
+            price.push(['SW__COCINA__Lavaplatos','',''])
+            price.push(['OPT__COCINA__EnAcero',220000,220000])
+            price.push(['OPT__COCINA__EnAceroMejorado',260000,260000])
+            price.push(['SW__COCINA__EnchapeDeSalpicadero','',''])
+            price.push(['OPT__COCINA__Tipo1',189524,189524])
+            price.push(['OPT__COCINA__Tipo2',222000,222000])
+            price.push(['SW__COCINA__Griferia','',''])
+            price.push(['OPT__COCINA__GriferiaLavaplatos',353741,353741])
+            price.push(['OPT__COCINA__GriferiaLavaplatosMejorada',500680,500680])
+            price.push(['SW__COCINA__MuebleBajoParaLavadero',142857,142857])
+            price.push(['SW__COCINA__EnchapeDeZonaDeRopas',322449,322449])
+
+            price.push(['TIT__PATIO','',''])
+            price.push(['SW__PATIO__EnchapeDePiso','',''])
+            price.push(['OPT__PATIO__Tipo1',982312,''])
+            price.push(['OPT__PATIO__Tipo2',1060544,''])
+
+            function get_component(component_name){
+                var component = document.getElementById(component_name);
+                return component                
+            }
+
+            function uncheck(component_name){
+                option = get_component(component_name)
+                if (option) {
+                    if (option.checked){
+                        option.checked = false;
+                    }
+                }
+            }
+
+            function show_hide_component(option_switch, option_name){
+                option = get_component(option_name)
+                if (option) {
+                    if (option_switch.checked){
+                        option.classList.remove("visually-hidden");
+                    } else {
+                        option.classList.add("visually-hidden");
+                    }
+                }                
+            }
+
+            function get_level(){
+                let selected_level = 0
+                if (get_component('level1').checked){
+                    selected_level = 1 
+                } else if (get_component('level2').checked) {
+                    selected_level = 2
+                } 
+                return selected_level
+            }
+
+           function start_slider(){
+                add_slider_event('habitaciones', 'numeroDeHabitaciones')
+                add_slider_event('baños', 'numeroDeBaños')
+                add_slider_event('area', 'areaTotal')
+                add_slider_event('areaDePatio', 'areaTotalDePatio')
+            }
+
+            function start_display_component(){
+                add_display_event('mesonDeCocina', 'seccionMejorarElMesonDeCocina')
+                add_display_event('muebleBajoDeCocina', 'seccionMejorarMuebleBajoDeCocina')
+                add_display_event('enchapeBañoSocial','seccionMejorarEnchapeBañoSocial')
+                add_display_event('comboSanitario','seccionMejorarComboSanitario')
+                add_display_event('carraplastEnElTecho','mejorarCarraplastEnElTecho')
+                add_display_event('estucoMurosDeConcreto','mejorarEstucoMurosDeConcreto')
+            }
+
+            function start_level_component(){
+                add_level_event('level1');
+                add_level_event('level2');
+            }
+
+            function add_slider_event(component, selector){
+                document.getElementById(component).addEventListener('input',function(){change_slider(component, selector)},false);
+            }
+
+            function add_display_event(component, section){
+                document.getElementById(component).addEventListener('click',function(){display_component(component, section)},false);
+            }
+
+            function add_level_event(component_name){
+                radiobutton = get_component(component_name) 
+                if (radiobutton) {
+                    radiobutton.addEventListener('change',function(){recalculate_budget()},false);
+                } else {
+                   console.log(component_name + " doesn't exist!");
+                }
+            }
+
+            function change_slider(component, selector){    
+                document.getElementById(selector).innerHTML=document.getElementById(component).value;
+            }
+
+            function display_component(component,section){
+                if (document.getElementById(component).checked) {
+                    status = ''
+                } else {
+                    status = 'block'
+                }
+                document.getElementById(section).style.display=status;
+            }
+
+            function recalculate(element){
+                recalculate_budget();
+            }
+
+            function recalculate_switch(option_switch, option_name, name_option_1, name_option_2){
+                uncheck(name_option_1)
+                uncheck(name_option_2)
+                recalculate_budget()
+                show_hide_component(option_switch, option_name)
+            }
+
+            function recalculate_budget(){
+                BUDGET = 0
+                price.forEach((component) => {
+                    component = get_component(component[0]);
+                    if (component) {
+                        if (component.checked){
+                            calculate_budget(component)
+                        }
+                    }
+                })
+            }
+
+            function calculate_budget(element){
+                LEVEL = get_level()
+                factor = -1
+                if (element.checked) {
+                    factor = 1
+                }
+                element_price = price.filter(el => el[0] == element.id)
+                element_cost = 0
+                if (element_price.length > 0){
+                    element_cost = element_price[0][LEVEL] * factor
+                    BUDGET = BUDGET + element_cost 
+                    get_budget()
+                }
+            }
+
+            function get_budget(){
+                let pesoCO = new Intl.NumberFormat('es-CO');
+                total = parseFloat(BUDGET).toFixed(0)
+                if (total<0){ 
+                    total =0; 
+                }
+                document.getElementById('valorDelaCotizacion').innerText = ' Total' + ': $' + pesoCO.format(total);
+            }
+
+        </script>  
+ </head>
+ <body>
+       <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+          <div class="container d-flex justify-content-between">
+
+            <div class="logo">
+              <!-- Uncomment below if you prefer to use an text logo -->
+              <!-- <h1><a href="index.html">NewBiz</a></h1> -->
+              <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            </div>
+
+          </div>
+        </header><!-- #header -->
+        <main id="main">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container" data-aos="fade-up">
+                <ul>
+                    <a class="nav-link scrollto active" href="index.html" style="color: white;">Inicio</a>
+                    <a class="nav-link scrollto " href="planderenovaciones.html" style="color: white;">Planes de Renovacion</a>
+                    <a class="nav-link scrollto" href="portafolio.html" style="color: white;">Portafolio</a>
+                    <a class="nav-link scrollto" href="contact.html" style="color: white;">Contacto</a>
+                </ul>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item display-6"> 
+                            <a id="valorDelaCotizacion" name="valorDelaCotizacion" class="nav-link disabled"  style="color: white; font-size: 30px;" aria-disabled="true">Valor de su cotización</a>
+                        </li>
+                    </ul>                
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid p-5">
+            <main>   
+                <div class="bg-light p-5 rounded">
+                    <div class="display-3 text-center p-5"><div style="font-size: 55px;"><b>Mis acabados</b></div></div>
+                    <form id="budgetform" name="budgetform" action="mailto:orlandovb@hotmail.com" method="post" enctype="text/plain">
+                        <div class="form-inline">
+
+                            <!-- Indicáme la siguiente información sobre la vivienda -->
+                            <div class="form-row">
+                                <br/>
+                                <!-- Indicáme la siguiente información sobre la vivienda -->
+                                <div class="form-row" style="background-color: #5D99C1; color: white;  font-size: 25px; padding: 0.1rem;">
+                                    <strong>
+                                        Indicáme la siguiente información sobre la vivienda
+                                    </strong>
+                                </div>
+
+                                <br/>
+                                <div class="toast-body">
+                                    Mueva hacia la derecha o hacia la izquierda el indicador para indicar las cantidades.
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                &nbsp;
+                            </div>
+                            <div class="form-row">
+                                <div class="flex-container">
+                                    <div class="col-5 p-1">
+                                        <div class="form-group">
+                                            <input title="Area de la vivienda" type="range" id="area" value="0" min="10" max="300" step="0.1" required/>
+                                            <br/>
+                                            <label for="area"><h4>Area de la vivienda:&nbsp;</h4></label>
+                                            <span id="areaTotal" class="value">0</span>                 
+                                            <span class="value">m<sup>2</sup>.</span>                 
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-1">
+                                        <div class="form-group">
+                                            <input title="Area del patio" type="range" id="areaDePatio" value="0" min="1" max="100" step="0.1" required/>
+                                            <br/>
+                                            <label for="areaDePatio"><h4>Area del patio:&nbsp;</h4></label>
+                                            <span id="areaTotalDePatio" class="value">0</span>                 
+                                            <span class="value">m<sup>2</sup>.</span>                 
+                                        </div>
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <div class="form-group">
+                                            <input type="range" id="habitaciones" value="0" min="0" max="10" step="1" required/>
+                                            <br/>
+                                            <label for="habitaciones"><h4>Número de habitaciones:&nbsp;</h4></label>
+                                            <span id="numeroDeHabitaciones" class="value">0</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 p-1">
+                                        <div class="form-group">
+                                            <input type="range" id="baños" value="0" min="0" max="10" step="1" required/>
+                                            <br/>
+                                            <label for="baños"><h4>Número de baños:&nbsp;</h4></label>
+                                            <span id="numeroDeBaños" class="value">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <br/>   
+                            <!-- Indicáme el tipo de vivienda -->
+                            <div class="form-row" style="background-color: #5D99C1; color: white;  font-size: 25px; padding: 0.1rem;">
+                                <strong>
+                                    Indicáme el tipo de vivienda
+                                </strong>
+                            </div>
+
+                            <br/>
+                            <div class="toast-body">
+                                Selecciona el nivel de la vivienda.
+                            </div>
+                            </div>                       
+                            <div class="form-row">
+                                &nbsp;
+                            </div>
+                            <div class="form-row" id="level">
+                                <div class="form-check-inline ">
+                                    <input class="form-check-input" type="radio" name="selectedLevel" id="level1" value="Nivel 1" checked>
+                                    <label class="form-check-label" for="level1">
+                                      <h4>Nivel 1</h4>
+                                    </label>
+                                  </div>
+                                  <div class="form-check-inline">
+                                    <input class="form-check-input" type="radio" name="selectedLevel" id="level2" value="Nivel 2">
+                                    <label class="form-check-label" for="level2">
+                                        <h4>Nivel 2</h4>
+                                    </label>
+                                  </div>
+                            </div>                            
+
+                            <!-- ¿Qué te entrega la constructora? -->
+                            <div class="form-row">
+                                &nbsp;
+                            </div>
+                            <div class="form-row">
+                                <br/> 
+                                <div class="form-row" style="background-color: #5D99C1; color: white;  font-size: 25px; padding: 0.1rem;">
+                                    <strong>
+                                        ¿Qué te entrega la constructora?
+                                    </strong>
+                                </div>
+
+                                <br/>
+                                <div class="toast-body">
+                                    1. Presione clic en cada uno de los elmementos que contiene la vivienda.
+                                    <br/>
+                                    2. Indique si desea mojorarlo o cambiarlo.
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                &nbsp;
+                            </div>
+                            <div class="form-row">
+                                <div class="card-deck">
+
+                                    <!-- Mesón de cocina -->
+                                    <div class="card border-opacity-50">
+                                        <div class="card-header">
+                                            <label class="switch" for="mesonDeCocina">
+                                                <input title="Mesón de cocina" type="checkbox" id="mesonDeCocina" name="mesonDeCocina"/>
+                                                <span class="slider rounded"></span>
+                                                <h5></h5>
+                                            </label>
+                                            <p class="fs-5"><h5>Mesón de cocina</h5></p>
+                                        </div>
+                                        <div class="card-body" id="seccionMejorarElMesonDeCocina">
+                                            <label class="switch" for="mejorarElMesonDeCocina">
+                                                <input title="¿Deseo mejorarlo?" type="checkbox" id="mejorarElMesonDeCocina" name="mejorarElMesonDeCocina"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <div class="toast-body">¿Deseo mejorarlo?</div>
+                                        </div>                            
+                                    </div>
+
+                                    <!-- Mueble bajo de cocina -->
+                                    <div class="card border-opacity-50">
+                                        <div class="card-header">
+                                            <label class="switch" for="muebleBajoDeCocina">
+                                                <input title="Mesón de cocina" type="checkbox" id="muebleBajoDeCocina" name="muebleBajoDeCocina"/>
+                                                <span class="slider rounded"></span>
+                                            </label>
+                                            <p class="fs-5"><h5>Mueble bajo de cocina</h5></p>
+                                        </div>
+                                        <div class="card-body" id="seccionMejorarMuebleBajoDeCocina">
+                                            <label class="switch" for="mejorarMuebleBajoDeCocina">
+                                                <input title="Mesón de cocina" type="checkbox" id="mejorarMuebleBajoDeCocina" name="mejorarMuebleBajoDeCocina"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <div class="toast-body">¿Deseo mejorarlo?</div>
+                                        </div>                            
+                                    </div>
+
+                                    <!-- Enchape baño social -->
+                                    <div class="card border-opacity-50">
+                                        <div class="card-header">
+                                            <label class="switch" for="enchapeBañoSocial">
+                                                <input title="Mesón de cocina" type="checkbox" id="enchapeBañoSocial" name="enchapeBañoSocial">
+                                                <span class="slider rounded"></span>
+                                            </label>
+                                            <p class="fs-5"><h5>Enchape baño social</h5></p>
+                                        </div>
+                                        <div class="card-body" id="seccionMejorarEnchapeBañoSocial">
+                                            <label class="switch" for="mejorarEnchapeBañoSocial">
+                                                <input title="Mesón de cocina" type="checkbox" id="mejorarEnchapeBañoSocial" name="mejorarEnchapeBañoSocial">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <div class="toast-body">¿Deseo mejorarlo?</div>
+                                        </div>                            
+                                    </div>
+
+                                    <!-- Combo sanitario -->
+                                    <div class="card border-opacity-50">
+                                        <div class="card-header">
+                                            <label class="switch" for="comboSanitario">
+                                                <input title="Mesón de cocina" type="checkbox" id="comboSanitario" name="comboSanitario">
+                                                <span class="slider rounded"></span>
+                                            </label>
+                                            <p class="fs-5"><h5>Combo sanitario</h5></p>
+                                        </div>
+                                        <div class="card-body" id="seccionMejorarComboSanitario">
+                                            <label class="switch" for="mejorarComboSanitario">
+                                                <input title="Mesón de cocina" type="checkbox" id="mejorarComboSanitario" name="mejorarComboSanitario">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <div class="toast-body">¿Deseo mejorarlo?</div>
+                                        </div>                            
+                                    </div>
+
+                                    <!-- Carraplast en el techo -->
+                                    <div class="card border-opacity-50">
+                                        <div class="card-header">
+                                            <label class="switch" for="carraplastEnElTecho">
+                                                <input title="Mesón de cocina" type="checkbox" id="carraplastEnElTecho" name="carraplastEnElTecho">
+                                                <span class="slider rounded"></span>
+                                            </label>
+                                            <p class="fs-5"><h5>Carraplast en el techo</h5></p>
+                                        </div>
+                                        <div class="card-body" id="seccionMejorarCarraplastEnElTecho">
+                                            <label class="switch" for="mejorarCarraplastEnElTecho">
+                                                <input title="Mesón de cocina" type="checkbox" id="mejorarCarraplastEnElTecho" name="mejorarCarraplastEnElTecho">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <div class="toast-body">¿Deseo mejorarlo?</div>
+                                        </div>                            
+                                    </div>
+
+                                    <!-- Mueble bajo de cocina -->
+                                    <div class="card border-opacity-50">
+                                        <div class="card-header">
+                                            <label class="switch" for="estucoMurosDeConcreto">
+                                                <input title="Mesón de cocina" title="Mesón de cocina" type="checkbox" id="estucoMurosDeConcreto" name="estucoMurosDeConcreto">
+                                                <span class="slider rounded"></span>
+                                            </label>
+                                            <p class="fs-5"><h5>Estuco muros de concreto</h5></p>
+                                        </div>
+                                        <div class="card-body" id="seccionMejorarEstucoMurosDeConcreto">
+                                            <label class="switch" for="mejorarEstucoMurosDeConcreto">
+                                                <input title="Mesón de cocina" type="checkbox" id="mejorarEstucoMurosDeConcreto" name="mejorarEstucoMurosDeConcreto">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <div class="toast-body">¿Deseo mejorarlo?</div>
+                                        </div>                            
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Indicános ¿Cúales son los acabados que deseas para tu vivienda? -->
+                            <div class="form-row">
+                                &nbsp;
+                            </div>
+                            <div class="form-row">
+                                <br/> 
+                                <div class="form-row" style="background-color: #5D99C1; color: white;  font-size: 25px; padding: 0.1rem;">
+                                    <strong>
+                                        Indicános ¿Cúales son los acabados que deseas para tu vivienda?
+                                    </strong>
+                                </div>
+
+                                <br/>
+                                <div class="toast-body">
+                                    Seleccione cada uno de los acabados que desea adquirir para su vivienda.
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                &nbsp;
+                            </div>
+
+                            <!-- Obra blanca y tipo de piso -->                                
+                            <div class="form-row card w-100 m-0 p-3" id="OBRA_BLANCA_Y_TIPO_DE_PISO" name="OBRA_BLANCA_Y_TIPO_DE_PISO">
+                                <div class="card-title display-6" id="OBRA_BLANCA_Y_TIPO_DE_PISO_title" name="OBRA_BLANCA_Y_TIPO_DE_PISO_title">&nbsp;&nbsp;<b>Obra blanca y tipo de piso</b></div>
+
+                                <div class="card-body" id="OBRA_BLANCA_Y_TIPO_DE_PISO_details" name="OBRA_BLANCA_Y_TIPO_DE_PISO_details">
+                                    
+                                    <!-- Techo en acabado liso -->                                
+                                    <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TechoEnAcabadoLiso">
+                                        <input title="Techo en acabado liso" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TechoEnAcabadoLiso" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TechoEnAcabadoLiso" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Techo en acabado liso</span>
+                                    <br/>
+
+                                    <!-- Cielo falso en todo el apartamento -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento" name="OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento">
+                                            <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento">
+                                                <input title="Cielo falso en todo el apartamento" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento" onchange="recalculate_switch(this, 'OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento','OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnDrywall','OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPvc')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Cielo falso en todo el apartamento</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento" name="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnDrywall">
+                                                    <input title="Cielo falso en todo el apartamento en drywall" type="radio" id="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnDrywall" name="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalso" onchange="recalculate('SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En drywall</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPvc">
+                                                    <input title="Cielo falso en todo el apartamento en drywall en PVC" type="radio" id="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPvc" name="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalso" onchange="recalculate('SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CieloFalsoEnTodoElApartamento');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En PVC</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+
+                                    <!-- Estuco en muros -->                                
+                                    <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__EstucoEnMuros">
+                                        <input title="Estuco en muros" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__EstucoEnMuros" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__EstucoEnMuros" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Estuco en muros</span>
+                                    <br/>
+                                    <br/>
+
+                                    <!-- Pintura -->                                
+                                    <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__Pintura">
+                                        <input title="Pintura" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__Pintura" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__Pintura" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Pintura</span>
+                                    <br/>
+                                    <br/> 
+
+                                    <!-- Cerradura de seguridad, incluido ojo biónico -->                                
+                                    <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CerraduraDeSeguridadIncluidoOjoBionico">
+                                        <input title="Cerradura de seguridad, incluido ojo biónico" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CerraduraDeSeguridadIncluidoOjoBionico" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__CerraduraDeSeguridadIncluidoOjoBionico" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Cerradura de seguridad, incluido ojo biónico</span>
+                                    <br/>
+
+                                    <!-- Refuerzo para la puerta principal -->                                
+                                    <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__RefuerzoParaLaPuertaPrincipal">
+                                        <input title="Refuerzo para la puerta principal" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__RefuerzoParaLaPuertaPrincipal" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__RefuerzoParaLaPuertaPrincipal" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Refuerzo para la puerta principal</span>
+                                    <br/>
+                                    <br/> 
+
+                                    <!-- Kit de iluminación -->                                
+                                    <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__KitDeIluminacion">
+                                        <input title="Kit de iluminación" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__KitDeIluminacion" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__KitDeIluminacion" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Kit de iluminación</span>
+                                    <br/>
+                                    <br/> 
+
+                                    <!-- Tipo de piso a instalar, incluido zócalo -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo" name="OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo">
+                                            <label class="switch" for="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo">
+                                                <input title="Tipo de piso a instalar, incluido zócalo" type="checkbox" id="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo" name="SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo" onchange="recalculate_switch(this, 'OPT_OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo','OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnCeramica','OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPorcelanato')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Tipo de piso a instalar, incluido zócalo</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT_OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo" name="OPT_OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnCeramica">
+                                                    <input title="Tipo de piso a instalar, incluido zócalo en cerámica" type="radio" id="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnCeramica" name="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePiso" onchange="recalculate('SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En cerámica</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPorcelanato">
+                                                    <input title="Tipo de piso a instalar, incluido zócalo en porcelanato" type="radio" id="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__EnPorcelanato" name="OPT__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePiso" onchange="recalculate('SW__OBRA_BLANCA_Y_TIPO_DE_PISO__TipoDePisoAInstalarIncluidoZocalo');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En porcelanato</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="form-row">&nbsp;</div>
+
+                            <!-- Alcobra principal -->                                
+                            <div class="form-row card w-100 m-0 p-3" id="ALCOBA_PRINCIPAL" name="ALCOBA_PRINCIPAL">
+                                <div class="card-title display-6" id="ALCOBA_PRINCIPAL_title" name="ALCOBA_PRINCIPAL_title">&nbsp;&nbsp;<b>Alcobra principal </b></div>
+
+                                <div class="card-body" id="ALCOBA_PRINCIPAL_details" name="ALCOBA_PRINCIPAL_details">
+                                    
+                                    <!-- Puerta en madera, incluida cerradura -->                                
+                                    <label class="switch" for="SW__ALCOBA_PRINCIPAL__PuertaEnMaderaIncluidaCerradura">
+                                        <input title="Puerta en madera, incluida cerradura" type="checkbox" id="SW__ALCOBA_PRINCIPAL__PuertaEnMaderaIncluidaCerradura" name="SW__ALCOBA_PRINCIPAL__PuertaEnMaderaIncluidaCerradura" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Puerta en madera, incluida cerradura</span>
+                                    <br/>
+                                    </br/>
+
+                                    <!-- Closet en RH/MDF -->                                
+                                    <label class="switch" for="SW__ALCOBA_PRINCIPAL__ClosetEnRh_Mdf">
+                                        <input title="Closet en RH/MDF" type="checkbox" id="SW__ALCOBA_PRINCIPAL__ClosetEnRh_Mdf" name="SW__ALCOBA_PRINCIPAL__ClosetEnRh_Mdf" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Closet en RH/MDF</span>
+                                    <br/>
+                                    <br/>
+
+                                    <!-- Baño -->                               
+                                    <div class="card-title display-6" id="BAÑO_title" name="BAÑO_title"><b>Baño</b></div>
+
+                                    <div class="card-body" id="BAÑO_details" name="BAÑO_details">
+
+                                        <!-- Construir muro divisorio -->                                
+                                        <label class="switch" for="SW__BAÑO__ConstruirMuroDivisorio">
+                                            <input title="Construir muro divisorio" type="checkbox" id="SW__BAÑO__ConstruirMuroDivisorio" name="SW__BAÑO__ConstruirMuroDivisorio" onchange="calculate_budget(this);"/>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="toast-body fs-5">&nbsp;&nbsp;Construir muro divisorio</span>
+                                        </br/>
+
+                                        <!-- Enchape de piso y muros -->                               
+                                        <div class="row">
+                                            <div class="col-4" id="BAÑO__EnchapeDePisoYMuros" name="BAÑO__EnchapeDePisoYMuros">
+                                                <label class="switch" for="SW__BAÑO__EnchapeDePisoYMuros">
+                                                    <input title="Enchape de piso y muros" type="checkbox" id="SW__BAÑO__EnchapeDePisoYMuros" name="SW__BAÑO__EnchapeDePisoYMuros" onchange="recalculate_switch(this,'OPT__BAÑO__EnchapeDePisoYMuros', 'OPT__BAÑO__AlturaCompleta','OPT__BAÑO__AlturaMedia')"/>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <span class="toast-body fs-5">&nbsp;&nbsp;Enchape de piso y muros</span>
+                                            </div>
+                                            <div class="col-8 visually-hidden" id="OPT__BAÑO__EnchapeDePisoYMuros" name="OPT__BAÑO__EnchapeDePisoYMuros">
+                                                <div class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__AlturaCompleta">
+                                                        <input title="Enchape de piso y muros altura completa" type="radio" id="OPT__BAÑO__AlturaCompleta" name="OPT__BAÑO__Enchape" onchange="recalculate('SW__BAÑO__EnchapeDePisoYMuros');"/>
+                                                        <span class="toast-body fs-5">&nbsp;Altura completa</span>
+                                                    </label>
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__AlturaMedia">
+                                                        <input title="Enchape de piso y muros altura media" type="radio" id="OPT__BAÑO__AlturaMedia" name="OPT__BAÑO__Enchape" onchange="recalculate('SW__BAÑO__EnchapeDePisoYMuros');"/>
+                                                        <span class="toast-body fs-5">&nbsp;Altura media</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br/>
+
+                                        <!-- Puerta entamborada en RH/MDF -->                                
+                                        <label class="switch" for="SW__BAÑO__PuertaEntamboradaEnRh_Mdf">
+                                            <input title="Puerta entamborada en RH/MDF" type="checkbox" id="SW__BAÑO__PuertaEntamboradaEnRh_Mdf" name="SW__BAÑO__PuertaEntamboradaEnRh_Mdf" onchange="calculate_budget(this);"/>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="toast-body fs-5">&nbsp;&nbsp;Puerta entamborada en RH/MDF</span>
+                                        </br/>
+                                        </br/>
+
+                                        <!-- Sanitario -->                               
+                                        <div class="row">
+                                            <div class="col-4" id="BAÑO__Sanitario" name="BAÑO__Sanitario">
+                                                <label class="switch" for="SW__BAÑO__Sanitario">
+                                                    <input title="Sanitario" type="checkbox" id="SW__BAÑO__Sanitario" name="SW__BAÑO__Sanitario" onchange="recalculate_switch(this, 'OPT__BAÑO__Sanitario', 'OPT__BAÑO__Ahorrador','OPT__BAÑO__AhorradorDobleDescarga')"/>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <span class="toast-body fs-5">&nbsp;&nbsp;Sanitario</span>
+                                            </div>
+                                            <div class="col-8 visually-hidden" id="OPT__BAÑO__Sanitario" name="OPT__BAÑO__Sanitario">
+                                                <div class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__Ahorrador">
+                                                        <input title="Sanitario ahorrador" type="radio" id="OPT__BAÑO__Ahorrador" name="OPT__BAÑO__AhorradorSanitario" onchange="recalculate('SW__BAÑO__Sanitario');"/>
+                                                        <span class="toast-body fs-5">&nbsp;Ahorrador</span>
+                                                    </label>
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__AhorradorDobleDescarga">
+                                                        <input title="Sanitario ahorrador doble descarga" type="radio" id="OPT__BAÑO__AhorradorDobleDescarga" name="OPT__BAÑO__AhorradorSanitario" onchange="recalculate('SW__BAÑO__Sanitario');"/>
+                                                        <span class="toast-body fs-5">&nbsp;Ahorrador doble descarga</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br/>
+
+                                        <!-- Mueble de baño en MDF con mesón -->                               
+                                        <div class="row">
+                                            <div class="col-4" id="BAÑO__MuebleDeBañoEnMdfConMeson" name="BAÑO__MuebleDeBañoEnMdfConMeson">
+                                                <label class="switch" for="SW__BAÑO__MuebleDeBañoEnMdfConMeson">
+                                                    <input title="Mueble de baño en MDF con mesón" type="checkbox" id="SW__BAÑO__MuebleDeBañoEnMdfConMeson" name="SW__BAÑO__MuebleDeBañoEnMdfConMeson" onchange="recalculate_switch(this, 'OPT__BAÑO__MuebleDeBañoEnMdfConMeson', 'OPT__BAÑO__EnGranito', 'OPT__BAÑO__EnMadera')"/>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <span class="toast-body fs-5">&nbsp;&nbsp;Mueble de baño en MDF con mesón</span>
+                                            </div>
+                                            <div class="col-8 visually-hidden" id="OPT__BAÑO__MuebleDeBañoEnMdfConMeson" name="OPT__BAÑO__MuebleDeBañoEnMdfConMeson">
+                                                <div class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__EnGranito">
+                                                        <input title="Mueble de baño en MDF con mesón en granito" type="radio" id="OPT__BAÑO__EnGranito" name="OPT__BAÑO__MuebleDeBaño" onchange="recalculate('SW__BAÑO__MuebleDeBañoEnMdfConMeson');"/>
+                                                        <span class="toast-body fs-5">&nbsp;En granito</span>
+                                                    </label>
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__EnMadera">
+                                                        <input title="Mueble de baño en MDF con mesón en madera" type="radio" id="OPT__BAÑO__EnMadera" name="OPT__BAÑO__MuebleDeBaño" onchange="recalculate('SW__BAÑO__MuebleDeBañoEnMdfConMeson');"/>
+                                                        <span class="toast-body fs-5">&nbsp;En madera</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Lavamanos tipo tasón -->                               
+                                        <div class="row">
+                                            <div class="col-4" id="BAÑO__LavamanosTipoTason" name="BAÑO__LavamanosTipoTason">
+                                                <label class="switch" for="SW__BAÑO__LavamanosTipoTason">
+                                                    <input title="Lavamanos tipo tasón" type="checkbox" id="SW__BAÑO__LavamanosTipoTason" name="SW__BAÑO__LavamanosTipoTason" onchange="recalculate_switch(this, 'OPT__BAÑO__LavamanosTipoTason', 'OPT__BAÑO__DeSobreponer', 'OPT__BAÑO__DeIncrustar')"/>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <span class="toast-body fs-5">&nbsp;&nbsp;Lavamanos tipo tasón</span>
+                                            </div>
+                                            <div class="col-8 visually-hidden" id="OPT__BAÑO__LavamanosTipoTason" name="OPT__BAÑO__LavamanosTipoTason">
+                                                <div class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__DeSobreponer">
+                                                        <input title="Lavamanos tipo tasón de sobreponer" type="radio" id="OPT__BAÑO__DeSobreponer" name="OPT__BAÑO__Lavamanos" onchange="recalculate('SW__BAÑO__LavamanosTipoTason');"/>
+                                                        <span class="toast-body fs-5">&nbsp;De sobreponer</span>
+                                                    </label>
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__DeIncrustar">
+                                                        <input title="Lavamanos tipo tasón de incrustar" type="radio" id="OPT__BAÑO__DeIncrustar" name="OPT__BAÑO__Lavamanos" onchange="recalculate('SW__BAÑO__LavamanosTipoTason');"/>
+                                                        <span class="toast-body fs-5">&nbsp;De incrustar</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br/>                                        
+
+                                        <!-- Incrustaciones y griferia -->                               
+                                        <div class="row">
+                                            <div class="col-4" id="BAÑO__IncrustacionesYGriferia" name="BAÑO__IncrustacionesYGriferia">
+                                                <label class="switch" for="SW__BAÑO__IncrustacionesYGriferia">
+                                                    <input title="Incrustaciones y griferia" type="checkbox" id="SW__BAÑO__IncrustacionesYGriferia" name="SW__BAÑO__IncrustacionesYGriferia" onchange="recalculate_switch(this, 'OPT__BAÑO__IncrustacionesYGriferia', 'OPT__BAÑO__MonoControl', 'OPT__BAÑO__MonoControlMejorado')"/>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <span class="toast-body fs-5">&nbsp;&nbsp;Incrustaciones y griferia</span>
+                                            </div>
+                                            <div class="col-8 visually-hidden" id="OPT__BAÑO__IncrustacionesYGriferia" name="OPT__BAÑO__IncrustacionesYGriferia">
+                                                <div class="btn-group" data-toggle="buttons">
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__MonoControl">
+                                                        <input title="Incrustaciones y griferia mono control" type="radio" id="OPT__BAÑO__MonoControl" name="OPT__BAÑO__Incrustaciones" onchange="recalculate('SW__BAÑO__IncrustacionesYGriferia');"/>
+                                                        <span class="toast-body fs-5">&nbsp;Mono control</span>
+                                                    </label>
+                                                    <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO__MonoControlMejorado">
+                                                        <input title="Incrustaciones y griferia mono control mejorado" type="radio" id="OPT__BAÑO__MonoControlMejorado" name="OPT__BAÑO__Incrustaciones" onchange="recalculate('SW__BAÑO__IncrustacionesYGriferia');"/>
+                                                        <span class="toast-body fs-5">&nbsp;Mono control mejorado</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br/>  
+
+                                        <!-- División de baño en vidrio templado -->                                
+                                        <label class="switch" for="SW__BAÑO__DivisionDeBañoEnVidrioTemplado">
+                                            <input title="División de baño en vidrio templado" type="checkbox" id="SW__BAÑO__DivisionDeBañoEnVidrioTemplado" name="SW__BAÑO__DivisionDeBañoEnVidrioTemplado" onchange="calculate_budget(this);"/>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <span class="toast-body fs-5">&nbsp;&nbsp;División de baño en vidrio templado</span>
+                                        </br/>
+
+                                    </div>
+                                    <br/>
+
+                                </div>
+                            </div>
+                            <div class="form-row">&nbsp;</div>
+
+                            <!-- Alcobra 2 -->                                
+                            <div class="form-row card w-100 m-0 p-3" id="ALCOBA_2" name="ALCOBA_2">
+                                <div class="card-title display-6" id="ALCOBA_2_title" name="ALCOBA_2_title">&nbsp;&nbsp;<b>Alcoba 2 </b></div>
+
+                                <div class="card-body" id="ALCOBA_2_details" name="ALCOBA_2_details">
+                                    
+                                    <!-- Puerta en madera, incluida cerradura -->                                
+                                    <label class="switch" for="SW__ALCOBA_2__PuertaEnMaderaIncluidaCerradura">
+                                        <input title="Puerta en madera, incluida cerradura" type="checkbox" id="SW__ALCOBA_2__PuertaEnMaderaIncluidaCerradura" name="SW__ALCOBA_2__PuertaEnMaderaIncluidaCerradura" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Puerta en madera, incluida cerradura</span>
+                                    <br/>
+                                    </br/>
+
+                                    <!-- Closet en RH/MDF -->                                
+                                    <label class="switch" for="SW__ALCOBA_2__ClosetEnRh_Mdf">
+                                        <input title="Closet en RH/MDF" type="checkbox" id="SW__ALCOBA_2__ClosetEnRh_Mdf" name="SW__ALCOBA_2__ClosetEnRh_Mdf" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Closet en RH/MDF</span>
+
+                                </div>
+                            </div>
+                            <div class="form-row">&nbsp;</div>
+
+                            <!-- Baño -->                               
+                            <div class="form-row card w-100 m-0 p-3" id="BAÑO_SOCIAL" name="BAÑO_SOCIAL">
+                                                              
+                                <div class="card-title display-6" id="BAÑO_SOCIAL_title" name="BAÑO_SOCIAL_title"><b>Baño</b></div>
+
+                                <div class="card-body" id="BAÑO_SOCIAL_details" name="BAÑO_SOCIAL_details">
+
+                                    <!-- Demoler enchape existente -->                                
+                                    <label class="switch" for="SW__BAÑO_SOCIAL__DemolerEnchapeExistente">
+                                        <input title="Demoler enchape existente" type="checkbox" id="SW__BAÑO_SOCIAL__DemolerEnchapeExistente" name="SW__BAÑO_SOCIAL__DemolerEnchapeExistente" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Demoler enchape existente</span>
+                                    </br/>
+
+                                    <!-- Enchape de piso y muros -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="BAÑO_SOCIAL__EnchapeDePisoYMuros" name="BAÑO_SOCIAL__EnchapeDePisoYMuros">
+                                            <label class="switch" for="SW__BAÑO_SOCIAL__EnchapeDePisoYMuros">
+                                                <input title="Enchape de piso y muros" type="checkbox" id="SW__BAÑO_SOCIAL__EnchapeDePisoYMuros" name="SW__BAÑO_SOCIAL__EnchapeDePisoYMuros" onchange="recalculate_switch(this,'OPT__BAÑO_SOCIAL__EnchapeDePisoYMuros', 'OPT__BAÑO_SOCIAL__AlturaCompleta','OPT__BAÑO_SOCIAL__AlturaMedia')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Enchape de piso y muros</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__BAÑO_SOCIAL__EnchapeDePisoYMuros" name="OPT__BAÑO_SOCIAL__EnchapeDePisoYMuros">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__AlturaCompleta">
+                                                    <input title="Enchape de piso y muros altura completa" type="radio" id="OPT__BAÑO_SOCIAL__AlturaCompleta" name="OPT__BAÑO_SOCIAL__Enchape" onchange="recalculate('SW__BAÑO_SOCIAL__EnchapeDePisoYMuros');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Altura completa</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__AlturaMedia">
+                                                    <input title="Enchape de piso y muros altura media" type="radio" id="OPT__BAÑO_SOCIAL__AlturaMedia" name="OPT__BAÑO_SOCIAL__Enchape" onchange="recalculate('SW__BAÑO_SOCIAL__EnchapeDePisoYMuros');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Altura media</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+
+                                    <!-- Puerta entamborada en RH/MDF -->                                
+                                    <label class="switch" for="SW__BAÑO_SOCIAL__PuertaEntamboradaEnRh_Mdf">
+                                        <input title="Puerta entamborada en RH/MDF" type="checkbox" id="SW__BAÑO_SOCIAL__PuertaEntamboradaEnRh_Mdf" name="SW__BAÑO_SOCIAL__PuertaEntamboradaEnRh_Mdf" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Puerta entamborada en RH/MDF</span>
+                                    </br/>
+                                    </br/>
+
+                                    <!-- Sanitario -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="BAÑO_SOCIAL__Sanitario" name="BAÑO_SOCIAL__Sanitario">
+                                            <label class="switch" for="SW__BAÑO_SOCIAL__Sanitario">
+                                                <input title="Sanitario" type="checkbox" id="SW__BAÑO_SOCIAL__Sanitario" name="SW__BAÑO_SOCIAL__Sanitario" onchange="recalculate_switch(this, 'OPT__BAÑO_SOCIAL__Sanitario', 'OPT__BAÑO_SOCIAL__Ahorrador','OPT__BAÑO_SOCIAL__AhorradorSanitario')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Sanitario</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__BAÑO_SOCIAL__Sanitario" name="OPT__BAÑO_SOCIAL__Sanitario">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__Ahorrador">
+                                                    <input title="Sanitario ahorrador" type="radio" id="OPT__BAÑO_SOCIAL__Ahorrador" name="OPT__BAÑO_SOCIAL__AhorradorSanitario" onchange="recalculate('SW__BAÑO_SOCIAL__Sanitario');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Ahorrador</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__AhorradorDobleDescarga">
+                                                    <input title="Sanitario ahorrador doble descarga" type="radio" id="OPT__BAÑO_SOCIAL__AhorradorDobleDescarga" name="OPT__BAÑO_SOCIAL__AhorradorSanitario" onchange="recalculate('SW__BAÑO_SOCIAL__Sanitario');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Ahorrador doble descarga</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+
+                                    <!-- Mueble de baño en MDF con mesón -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson" name="BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson">
+                                            <label class="switch" for="SW__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson">
+                                                <input title="Mueble de baño en MDF con mesón" type="checkbox" id="SW__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson" name="SW__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson" onchange="recalculate_switch(this, 'OPT__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson', 'OPT__BAÑO_SOCIAL__EnGranito', 'OPT__BAÑO_SOCIAL__EnMadera')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Mueble de baño en MDF con mesón</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson" name="OPT__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__EnGranito">
+                                                    <input title="Mueble de baño en MDF con mesón en granito" type="radio" id="OPT__BAÑO_SOCIAL__EnGranito" name="OPT__BAÑO_SOCIAL__MuebleDeBaño" onchange="recalculate('SW__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En granito</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__EnMadera">
+                                                    <input title="Mueble de baño en MDF con mesón en madera" type="radio" id="OPT__BAÑO_SOCIAL__EnMadera" name="OPT__BAÑO_SOCIAL__MuebleDeBaño" onchange="recalculate('SW__BAÑO_SOCIAL__MuebleDeBañoEnMdfConMeson');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En madera</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Lavamanos tipo tasón -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="BAÑO_SOCIAL__LavamanosTipoTason" name="BAÑO_SOCIAL__LavamanosTipoTason">
+                                            <label class="switch" for="SW__BAÑO_SOCIAL__LavamanosTipoTason">
+                                                <input title="Lavamanos tipo tasón" type="checkbox" id="SW__BAÑO_SOCIAL__LavamanosTipoTason" name="SW__BAÑO_SOCIAL__LavamanosTipoTason" onchange="recalculate_switch(this, 'OPT__BAÑO_SOCIAL__LavamanosTipoTason', 'OPT__BAÑO_SOCIAL__DeSobreponer', 'OPT__BAÑO_SOCIAL__DeIncrustar')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Lavamanos tipo tasón</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__BAÑO_SOCIAL__LavamanosTipoTason" name="OPT__V__LavamanosTipoTason">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__DeSobreponer">
+                                                    <input title="Lavamanos tipo tasón de sobreponer" type="radio" id="OPT__BAÑO_SOCIAL__DeSobreponer" name="OPT__BAÑO_SOCIAL__Lavamanos" onchange="recalculate('SW__BAÑO_SOCIAL__LavamanosTipoTason');"/>
+                                                    <span class="toast-body fs-5">&nbsp;De sobreponer</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__DeIncrustar">
+                                                    <input title="Lavamanos tipo tasón de incrustar" type="radio" id="OPT__BAÑO_SOCIAL__DeIncrustar" name="OPT__BAÑO_SOCIAL__Lavamanos" onchange="recalculate('SW__BAÑO_SOCIAL__LavamanosTipoTason');"/>
+                                                    <span class="toast-body fs-5">&nbsp;De incrustar</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>                                        
+
+                                    <!-- Incrustaciones y griferia -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="BAÑO_SOCIAL__IncrustacionesYGriferia" name="BAÑO_SOCIAL__IncrustacionesYGriferia">
+                                            <label class="switch" for="SW__BAÑO_SOCIAL__IncrustacionesYGriferia">
+                                                <input title="Incrustaciones y griferia" type="checkbox" id="SW__BAÑO_SOCIAL__IncrustacionesYGriferia" name="SW__BAÑO_SOCIAL__IncrustacionesYGriferia" onchange="recalculate_switch(this, 'OPT__BAÑO_SOCIAL__IncrustacionesYGriferia', 'OPT__BAÑO_SOCIAL__MonoControl', 'OPT__BAÑO_SOCIAL__MonoControlMejorado')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Incrustaciones y griferia</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__BAÑO_SOCIAL__IncrustacionesYGriferia" name="OPT__BAÑO_SOCIAL__IncrustacionesYGriferia">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__MonoControl">
+                                                    <input title="Incrustaciones y griferia mono control" type="radio" id="OPT__BAÑO_SOCIAL__MonoControl" name="OPT__BAÑO_SOCIAL__Incrustaciones" onchange="recalculate('SW__BAÑO_SOCIAL__IncrustacionesYGriferia');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Mono control</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__BAÑO_SOCIAL__MonoControlMejorado">
+                                                    <input title="Incrustaciones y griferia mono control mejorado" type="radio" id="OPT__BAÑO_SOCIAL__MonoControlMejorado" name="OPT__BAÑO_SOCIAL__Incrustaciones" onchange="recalculate('SW__BAÑO_SOCIAL__IncrustacionesYGriferia');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Mono control mejorado</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>  
+
+                                    <!-- División de baño en vidrio templado -->                                
+                                    <label class="switch" for="SW__BAÑO_SOCIAL__DivisionDeBañoEnVidrioTemplado">
+                                        <input title="División de baño en vidrio templado" type="checkbox" id="SW__BAÑO_SOCIAL__DivisionDeBañoEnVidrioTemplado" name="SW__BAÑO_SOCIAL__DivisionDeBañoEnVidrioTemplado" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;División de baño en vidrio templado</span>
+                                    </br/>
+
+                                </div>
+                            </div>
+                            <div class="form-row">&nbsp;</div>
+
+                            <!-- Cocina -->                               
+                            <div class="form-row card w-100 m-0 p-3" id="COCINA" name="COCINA">
+                                                              
+                                <div class="card-title display-6" id="COCINA_title" name="COCINA_title"><b>Cocina</b></div>
+
+                                <div class="card-body" id="COCINA_details" name="COCINA_details">
+
+                                    <!-- Mueble - superior -->                                
+                                    <label class="switch" for="SW__COCINA__MuebleSuperior">
+                                        <input title="Mueble - superior" type="checkbox" id="SW__COCINA__MuebleSuperior" name="SW__COCINA__MuebleSuperior" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Mueble - superior</span>
+                                    </br/>
+
+                                    <!-- Mueble - inferior -->                                
+                                    <label class="switch" for="SW__COCINA__MuebleInferior">
+                                        <input title="Mueble - inferior" type="checkbox" id="SW__COCINA__MuebleInferior" name="SW__COCINA__MuebleInferior" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Mueble - inferior</span>
+                                    </br/>
+                                    </br/>
+
+                                    <!-- Mesón tipo barra -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="COCINA__MesonTipoBarra" name="COCINA__MesonTipoBarra">
+                                            <label class="switch" for="SW__COCINA__MesonTipoBarra">
+                                                <input title="Mesón tipo barra" type="checkbox" id="SW__COCINA__MesonTipoBarra" name="SW__COCINA__MesonTipoBarra" onchange="recalculate_switch(this,'OPT__COCINA__MesonTipoBarra', 'OPT__COCINA__EnGranito','OPT__COCINA__EnMaderaRh_Mdf')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Mesón tipo barra</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__COCINA__MesonTipoBarra" name="OPT__COCINA__MesonTipoBarra">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__EnGranito">
+                                                    <input title="Mesón tipo barra en granito" type="radio" id="OPT__COCINA__EnGranito" name="OPT__COCINA__MesonTipoBarraEn" onchange="recalculate('SW__COCINA__MesonTipoBarra');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En granito</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__EnMaderaRh_Mdf">
+                                                    <input title="Mesón tipo barra en madera RH/MDF" type="radio" id="OPT__COCINA__EnMaderaRh_Mdf" name="OPT__COCINA__MesonTipoBarraEn" onchange="recalculate('SW__COCINA__MesonTipoBarra');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En madera RH/MDF</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mesón de cocina en granito -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="COCINA__MesonDeCocinaEnGranito" name="COCINA__MesonDeCocinaEnGranito">
+                                            <label class="switch" for="SW__COCINA__MesonDeCocinaEnGranito">
+                                                <input title="Mesón de cocina en granito" type="checkbox" id="SW__COCINA__MesonDeCocinaEnGranito" name="SW__COCINA__MesonDeCocinaEnGranito" onchange="recalculate_switch(this,'OPT__COCINA__MesonDeCocinaEnGranito', 'OPT__COCINA__ColorClaro','OPT__COCINA__ColorOscuro')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Mesón de cocina en granito</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__COCINA__MesonDeCocinaEnGranito" name="OPT__COCINA__MesonDeCocinaEnGranito">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__ColorClaro">
+                                                    <input title="Mesón de cocina en granito color claro" type="radio" id="OPT__COCINA__ColorClaro" name="OPT__COCINA__MesonDeCocinaEnGranitoColor" onchange="recalculate('SW__COCINA__MesonDeCocinaEnGranito');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Color claro</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__ColorOscuro">
+                                                    <input title="Mesón de cocina en granito color oscuro" type="radio" id="OPT__COCINA__ColorOscuro" name="OPT__COCINA__MesonDeCocinaEnGranitoColor" onchange="recalculate('SW__COCINA__MesonDeCocinaEnGranito');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Color oscuro</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+
+                                    <!-- Estufa 4 puestos -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="COCINA__Estufa4Puestos" name="COCINA__Estufa4Puestos">
+                                            <label class="switch" for="SW__COCINA__Estufa4Puestos">
+                                                <input title="Estufa 4 puestos" type="checkbox" id="SW__COCINA__Estufa4Puestos" name="SW__COCINA__Estufa4Puestos" onchange="recalculate_switch(this,'OPT__COCINA__Estufa4Puestos', 'OPT__COCINA__EnAluminio','OPT__COCINA__EnVidrio')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Estufa 4 puestos</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__COCINA__Estufa4Puestos" name="OPT__COCINA__Estufa4Puestos">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__EnAluminio">
+                                                    <input title="Estufa 4 puestos en aluminio" type="radio" id="OPT__COCINA__EnAluminio" name="OPT__COCINA__Estufa4PuestosEn" onchange="recalculate('SW__COCINA__Estufa4Puestos');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En aluminio</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__EnVidrio">
+                                                    <input title="Estufa 4 puestos en vidrio" type="radio" id="OPT__COCINA__EnVidrio" name="OPT__COCINA__Estufa4PuestosEn" onchange="recalculate('SW__COCINA__Estufa4Puestos');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En vidrio</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Campana horizontal -->                                
+                                    <label class="switch" for="SW__COCINA__CampanaHorizontal">
+                                        <input title="Campana horizontal" type="checkbox" id="SW__COCINA__CampanaHorizontal" name="SW__COCINA__CampanaHorizontal" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Campana horizontal</span>
+                                    </br/>                                    
+                                    <br/>
+
+                                    <!-- Lavaplatos -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="COCINA__Lavaplatos" name="COCINA__Lavaplatos">
+                                            <label class="switch" for="SW__COCINA__Lavaplatos">
+                                                <input title="Lavaplatos" type="checkbox" id="SW__COCINA__Lavaplatos" name="SW__COCINA__Lavaplatos" onchange="recalculate_switch(this,'OPT__COCINA__Lavaplatos', 'OPT__COCINA__EnAcero','OPT__COCINA__EnAceroMejorado')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Lavaplatos</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__COCINA__Lavaplatos" name="OPT__COCINA__Lavaplatos">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__EnAcero">
+                                                    <input title="Lavaplatos en acero" type="radio" id="OPT__COCINA__EnAcero" name="OPT__COCINA__LavaplatosEn" onchange="recalculate('SW__COCINA__Lavaplatos');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En acero</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__EnAceroMejorado">
+                                                    <input title="Lavaplatos en acero mejorado" type="radio" id="OPT__COCINA__EnAceroMejorado" name="OPT__COCINA__LavaplatosEn" onchange="recalculate('SW__COCINA__Lavaplatos');"/>
+                                                    <span class="toast-body fs-5">&nbsp;En acero mejorado</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Enchape de salpicadero -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="COCINA__EnchapeDeSalpicadero" name="COCINA__EnchapeDeSalpicadero">
+                                            <label class="switch" for="SW__COCINA__EnchapeDeSalpicadero">
+                                                <input title="Enchape de salpicadero" type="checkbox" id="SW__COCINA__EnchapeDeSalpicadero" name="SW__COCINA__EnchapeDeSalpicadero" onchange="recalculate_switch(this,'OPT__COCINA__EnchapeDeSalpicadero', 'OPT__COCINA__Tipo1','OPT__COCINA__Tipo2')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Enchape de salpicadero</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__COCINA__EnchapeDeSalpicadero" name="OPT__COCINA__EnchapeDeSalpicadero">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__Tipo1">
+                                                    <input title="Enchape de salpicadero tipo 1" type="radio" id="OPT__COCINA__Tipo1" name="OPT__COCINA__EnchapeDeSalpicaderoTipo" onchange="recalculate('SW__COCINA__EnchapeDeSalpicadero');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Tipo 1</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__Tipo2">
+                                                    <input title="Enchape de salpicadero tipo 2" type="radio" id="OPT__COCINA__Tipo2" name="OPT__COCINA__EnchapeDeSalpicaderoTipo" onchange="recalculate('SW__COCINA__EnchapeDeSalpicadero');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Tipo 2</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Grifería -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="COCINA__Griferia" name="COCINA__Griferia">
+                                            <label class="switch" for="SW__COCINA__Griferia">
+                                                <input title="Grifería" type="checkbox" id="SW__COCINA__Griferia" name="SW__COCINA__Griferia" onchange="recalculate_switch(this,'OPT__COCINA__Griferia', 'OPT__COCINA__GriferiaLavaplatos','OPT__COCINA__GriferiaLavaplatosMejorada')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Grifería</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__COCINA__Griferia" name="OPT__COCINA__Griferia">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__GriferiaLavaplatos">
+                                                    <input title="Griferia lavaplatos" type="radio" id="OPT__COCINA__GriferiaLavaplatos" name="OPT__COCINA__GriferiaCon" onchange="recalculate('SW__COCINA__Griferia');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Lavaplatos</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__COCINA__GriferiaLavaplatosMejorada">
+                                                    <input title="Griferia lavaplatos mejorada" type="radio" id="OPT__COCINA__GriferiaLavaplatosMejorada" name="OPT__COCINA__GriferiaCon" onchange="recalculate('SW__COCINA__Griferia');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Lavaplatos mejorada</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>                                    
+
+                                    <!-- Mueble bajo para lavadero -->                                
+                                    <label class="switch" for="SW__COCINA__MuebleBajoParaLavadero">
+                                        <input title="Mueble bajo para lavadero" type="checkbox" id="SW__COCINA__MuebleBajoParaLavadero" name="SW__COCINA__MuebleBajoParaLavadero" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Mueble bajo para lavadero</span>
+                                    <br/>
+
+                                    <!-- Enchape de zona de ropas -->                                
+                                    <label class="switch" for="SW__COCINA__EnchapeDeZonaDeRopas">
+                                        <input title="Enchape de zona de ropas" type="checkbox" id="SW__COCINA__EnchapeDeZonaDeRopas" name="SW__COCINA__EnchapeDeZonaDeRopas" onchange="calculate_budget(this);"/>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span class="toast-body fs-5">&nbsp;&nbsp;Enchape de zona de ropas</span>
+                                    </br/>                                    
+
+                                </div>
+
+                            </div>
+                            <div class="form-row">&nbsp;</div>
+
+
+                            <!-- Patio -->                               
+                            <div class="form-row card w-100 m-0 p-3" id="PATIO" name="PATIO">
+                                                              
+                                <div class="card-title display-6" id="PATIO_title" name="PATIO_title"><b>Patio</b></div>
+
+                                <div class="card-body" id="PATIO_details" name="PATIO_details">
+
+                                    <!-- Piso  -->                               
+                                    <div class="row">
+                                        <div class="col-4" id="PATIO__EnchapeDePiso" name="PATIO__EnchapeDePiso">
+                                            <label class="switch" for="SW__PATIO__EnchapeDePiso">
+                                                <input title="Piso" type="checkbox" id="SW__PATIO__EnchapeDePiso" name="SW__PATIO__EnchapeDePiso" onchange="recalculate_switch(this,'OPT__PATIO__EnchapeDePiso', 'OPT__PATIO__Tipo1','OPT__PATIO__Tipo2')"/>
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <span class="toast-body fs-5">&nbsp;&nbsp;Piso</span>
+                                        </div>
+                                        <div class="col-8 visually-hidden" id="OPT__PATIO__EnchapeDePiso" name="OPT__PATIO__EnchapeDePiso">
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__PATIO__Tipo1">
+                                                    <input title="Piso tipo 1" type="radio" id="OPT__PATIO__Tipo1" name="OPT__PATIO__EnchapeDePisoTipo" onchange="recalculate('SW__PATIO__EnchapeDePiso');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Tipo 1</span>
+                                                </label>
+                                                <label class="btn btn-outline-dark me-sm-1 border-0" for="OPT__PATIO__Tipo2">
+                                                    <input title="Piso tipo 2" type="radio" id="OPT__PATIO__Tipo2" name="OPT__PATIO__EnchapeDePisoTipo" onchange="recalculate('SW__PATIO__EnchapeDePiso');"/>
+                                                    <span class="toast-body fs-5">&nbsp;Tipo 2</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-row">&nbsp;</div>
+
+                            <!-- Datos de contacto -->                                
+                            <div class="form-row card w-100 m-0 p-3">
+                                <div class="card-title display-6">&nbsp;&nbsp;<b>Información de contacto</b></div>
+                                <div class="card-body">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                        </div>
+                                        <input title="Correo electrónico" type="email" class="form-control" id="correoelectrónico" name="correoelectrónico" placeholder="Indicanos una dirección de correo electrónico a donde enviarte nuestra cotización." required/>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-phone text-info"></i></div>
+                                            </div>
+                                            <input type="text" class="form-control" id="telefonodecontacto" name="telefonodecontacto" placeholder="Indicanos tu(s) telefóno(s) de contacto." required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                            </div>
+                                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Indicanos tu nombre y apellidos" required>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="form-group">
+                                        <label for="adicionFormControlTextarea"><h5>Indicanos si deseas alguna información adicional</h5></label>
+                                        <textarea title="Información adicional" class="form-control" id="informacionAdicional" rows="3"></textarea>
+                                    </div>                                
+                                </div>
+                            </div>                          
+                            <div class="form-row">&nbsp;</div>
+
+                            <!-- Enviar -->                                
+                            <div class="form-row">
+                                <button type="submit" class="btn btn-primary"><span class="display-6">Enviar solicitud</span></button>
+                            </div>
+                            <div class="form-row">&nbsp;</div>
+
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <footer class="container-fluid text-center">
+                <p>Te ofrecemos la mejor calidad, los mejores precios y las mejores alternativas para construir tu vivienda como la deseas!</p>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <script>
+            addEventListener('load', start_slider, false);
+            addEventListener('load', start_display_component, false);
+            addEventListener('load', start_level_component, false);
+         </script>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>FT Soluciones</h3>
+            <p>Comprometidos con la excelencia y la satisfacción del cliente. Contáctanos para más información.</p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Enlaces </h4>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Planes de Renovacion</a></li>
+              <li><a href="#">Portafolio</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contactanos</h4>
+            <p>
+              Medellin<br>
+              Colombia <br>
+              <strong>Telefono:</strong> +57 604 4179072<br>
+              <strong>Email:</strong> ftsolucionessas@gmail.com<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>FT Soluciones</strong>. Derechos reservados
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
+      -->
+        Designed by <a href="">Python Legion Software</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
